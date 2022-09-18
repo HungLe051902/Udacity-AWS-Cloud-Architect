@@ -1,0 +1,11 @@
+1. Minimum RTO for a single AZ outage 
+	I think it can take several minutes to a hour to complete
+    
+2. Minimum RTO for a single region outage
+        I think It takes about 1 hour
+
+3. Minimum RPO for a single AZ outage
+	I think RPO is 0 because the system failovers to another 
+    
+4. Minimum RPO for a single region outage 
+	This will depend on the replication lag (size of the database, workload levels, ...)
