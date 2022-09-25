@@ -1,0 +1,29 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+Increased_Cost Estimate,US East (N. Virginia),,Amazon EC2,6228,1826.92,28151.04,USD,"Operating system (Linux), Storage amount (2000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (m6a.xlarge), Pricing strategy (All Reserved 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Increased_Cost Estimate,US East (N. Virginia),,Amazon EC2,3012,1826.92,24935.04,USD,"Operating system (Linux), Storage amount (2000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (c6i.large), Pricing strategy (All Reserved 1 Year  All upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Increased_Cost Estimate,US East (N. Virginia),,Amazon RDS for MySQL,71640,3250,110640,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (2000 GB), Quantity (5), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr All Upfront), Additional backup storage (10000 GB)"
+Increased_Cost Estimate,US East (N. Virginia),,Amazon Route 53,0,3932.25,47187,USD,"Hosted Zones (2), Number of Elastic Network Interfaces (5), Basic Checks Within AWS (1000)"
+Increased_Cost Estimate,US East (N. Virginia),,S3 Standard,0,1150.01,13800.12,USD,S3 Standard storage (50000 GB per month)
+Increased_Cost Estimate,US East (N. Virginia),,S3 Standard - Infrequent Access,0,125,1500,USD,S3 Standard-IA storage (10000 GB per month)
+Increased_Cost Estimate,US East (N. Virginia),,S3 Glacier Deep Archive,0,122.82,1473.84,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (100000 GB per month)"
+Increased_Cost Estimate,US East (N. Virginia),,VPN Connection,0,730,8760,USD,"Working days per month (28), Number of Site-to-Site VPN Connections (20)"
+Increased_Cost Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,77.85,934.2,USD,Number of NAT Gateways (1)
+Increased_Cost Estimate,US East (N. Virginia),,Gateway Load Balancer,0,1668.05,20016.6,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (300 GB per hour), Average number of new connections/flows ( per second)"
+Increased_Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,2060.43,24725.16,USD,Number of Application Load Balancers (1)
+Increased_Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,1534.83,18417.96,USD,Number of Application Load Balancers (1)
+Increased_Cost Estimate,US East (N. Virginia),,Network Load Balancer,0,454.43,5453.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+Increased_Cost Estimate,US East (N. Virginia),,Amazon CloudWatch,0,82.62,991.44,USD,"GetMetricData: Number of metrics requested (10000), GetMetricWidgetImage: Number of metrics requested (10000), Number of other API requests (1000000), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Expected Logs Data scanned (10 GB), Number of Custom/Cross-account events (100000), Number of Dashboards (10), Number of Canary runs (1000), Number of Contributor Insights rules for CloudWatch (50), Number of Contributor Insights rules for DynamoDB (30), Number of Lambda functions (30)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Total Monthly,,,,,18842.13,,,
+,,,,,,,,
+,,,,,"EC2 - change Instance type, Storage amount",,,
+,,,,,"RDS - change Instance quantity from 1 to 5, change Storage amount upto 2000GB, change Additional backup storage upto 10TB",,,
+,,,,,"Route 53 - change Basic Checks Within AWS from 100 to 1000, change HTTPS Checks Within AWS from 100 to 1000, change HTTPS Checks Outside of AWS from 0 to 1000, change Number of Elastic Network Interfaces from 2 to 5",,,
+,,,,,"Amazon S3 - change Storage amount from 1000 - 50000GB, add 10000GB storage for S3 Standard - Infrequent Access, add config for S3 Glacier Deep Archive (100000GB storage)",,,
+,,,,,"VPC - change Number of Site-to-Site VPN Connections from 1 -> 20, change Data Processed per NAT Gateway 100 -> 2000, change Total processed bytes (in LCUs) from 100 -> 300",,,
+,,,,,Elastic Load Balancing - change Processed bytes (EC2 Instances and IP addresses as targets) 10 -> 100,,,
