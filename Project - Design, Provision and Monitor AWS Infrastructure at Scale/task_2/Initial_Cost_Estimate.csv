@@ -1,0 +1,21 @@
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary
+Initial_Cost_Estimate	US East (N. Virginia)		Amazon EC2	0	1119.22	13430.64	USD	"Operating system (Linux), Storage amount (800 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (c5.large), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Initial_Cost_Estimate	US East (N. Virginia)		Amazon EC2	0	1119.22	13430.64	USD	"Operating system (Linux), Storage amount (800 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Workload (Consistent, Number of instances: 6), Advance EC2 instance (c6i.large), Pricing strategy (On-Demand), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+Initial_Cost_Estimate	US East (N. Virginia)		Amazon RDS for MySQL	0	2112.28	25347.36	USD	"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (500 GB), Quantity (1), Instance type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+Initial_Cost_Estimate	US East (N. Virginia)		Amazon Route 53	0	308.5	3702	USD	"Hosted Zones (2), Number of Elastic Network Interfaces (2), Basic Checks Within AWS (100)"
+Initial_Cost_Estimate	US East (N. Virginia)		S3 Standard	0	23.01	276.12	USD	S3 Standard storage (1000 GB per month)
+Initial_Cost_Estimate	US East (N. Virginia)		Data Transfer	0	0	0	USD	
+Initial_Cost_Estimate	US East (N. Virginia)		VPN Connection	0	0	0	USD	Working days per month (22)
+Initial_Cost_Estimate	US East (N. Virginia)		Network Address Translation (NAT) Gateway	0	77.85	934.2	USD	Number of NAT Gateways (1)
+Initial_Cost_Estimate	US East (N. Virginia)		Gateway Load Balancer	0	80.3	963.6	USD	"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Total processed bytes (10 GB per hour), Average number of new connections/flows ( per second)"
+Initial_Cost_Estimate	US East (N. Virginia)		Application Load Balancer	0	1534.83	18417.96	USD	Number of Application Load Balancers (1)
+Initial_Cost_Estimate	US East (N. Virginia)		Application Load Balancer	0	1534.83	18417.96	USD	Number of Application Load Balancers (1)
+Initial_Cost_Estimate	US East (N. Virginia)		Network Load Balancer	0	454.43	5453.16	USD	"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour)"
+Initial_Cost_Estimate	US East (N. Virginia)		Amazon CloudWatch	0	82.62	991.44	USD	"GetMetricData: Number of metrics requested (10000), GetMetricWidgetImage: Number of metrics requested (10000), Number of other API requests (1000000), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Expected Logs Data scanned (10 GB), Number of Custom/Cross-account events (100000), Number of Dashboards (10), Number of Canary runs (1000), Number of Contributor Insights rules for CloudWatch (50), Number of Contributor Insights rules for DynamoDB (30), Number of Lambda functions (30)"
+								
+								
+								
+Acknowledgement								
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."								
+								
+Total Monthly					8447.09			
