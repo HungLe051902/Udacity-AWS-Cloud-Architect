@@ -1,0 +1,15 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+
+1. IAM policy is not following the principle of least privilege, allowing full access to resources
+2. CloudTrail is not specified
+3. Load-balancer is not configured to redirect HTTP requests to HTTPS
+4. VPC security group allow all ingress and egress traffic
+5. Server-side encryption and logging is not enabled for S3 buckets
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+1. Set IAM policy to readonly
+2. Config a CloudTrail that is stored on S3
+3. Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+4. Limit the traffic on Load Balancer
+5. Enable S3 server-side encryption and logging

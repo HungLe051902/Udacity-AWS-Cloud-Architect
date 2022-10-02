@@ -1,0 +1,30 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+
+- Terrascan (https://github.com/tenable/terrascan)
+- Regula (https://github.com/fugue/regula)
+
+### Example vulnerability
+
+- Server-side encryption is not enabled
+- Network exposures: Ingress open for all IP
+
+##Scan AMI’s or containers for OS vulnerabilities
+
+- Dagda (https://github.com/eliasgranderubio/dagda/)
+
+### Example vulnerability
+
+- https://nvd.nist.gov/
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+
+- AWS Config
+- AWS Inspector
+- AWS GuardDuty
+
+### Example vulnerability
+
+- S3 buckets with public write permission
+- UnauthorizedAccess:EC2/SSHBruteForce

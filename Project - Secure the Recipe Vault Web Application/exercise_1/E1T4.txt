@@ -1,0 +1,12 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+IAM Role has full access to any S3 bucket instance. Roles should only have access to specific buckets and allow only neccessary actions.
+
+# Poor practice 2
+WebAppSG has opened ports 5000 and 8000. These base on HTTP communication. As a publicly facing instance,
+these ports should be configured with port 443 for HTTPS communication.
+
+# Poor practice 3
+All security groups have defined CidrIp as 0.0.0.0/0.
+This gives a posibility of communication from/to any IP address.
